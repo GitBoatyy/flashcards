@@ -36,11 +36,11 @@ function someListener(event){
 
     if(element.id == 'html'){
         let i = randomhtml
-        flashLanguage.textContent = flashCards[i].language
-        flashQuestion.textContent = flashCards[i].question
-        flashAnswer.textContent = flashCards[i].answer
+        flashLanguage.textContent = htmlCards[i].language
+        flashQuestion.textContent = htmlCards[i].question
+        flashAnswer.textContent = htmlCards[i].answer
         flashAnswer.style.visibility = 'hidden'
-        flashReference.textContent = flashCards[i].reference 
+        flashReference.innerHTML = htmlCards[i].reference 
         flashReference.style.visibility = 'hidden'
         flashCard.appendChild(flashLanguage)
         flashCard.appendChild(flashQuestion)
@@ -49,11 +49,11 @@ function someListener(event){
         flashCard.appendChild(flashReference)
     }else if(element.id == 'css'){
         let i = randomcss
-        flashLanguage.textContent = flashCards[i].language
-        flashQuestion.textContent = flashCards[i].question
-        flashAnswer.textContent = flashCards[i].answer
+        flashLanguage.textContent = cssCards[i].language
+        flashQuestion.textContent = cssCards[i].question
+        flashAnswer.textContent = cssCards[i].answer
         flashAnswer.style.visibility = 'hidden'
-        flashReference.textContent = flashCards[i].reference 
+        flashReference.innerHTML = cssCards[i].reference 
         flashReference.style.visibility = 'hidden'
         flashCard.appendChild(flashLanguage)
         flashCard.appendChild(flashQuestion)
@@ -61,12 +61,12 @@ function someListener(event){
         flashCard.appendChild(flashAnswer)
         flashCard.appendChild(flashReference)
     }else if (element.id == 'javascript'){
-        let i = randomjavascript
-        flashLanguage.textContent = flashCards[i].language
-        flashQuestion.textContent = flashCards[i].question
-        flashAnswer.textContent = flashCards[i].answer
+        let i = randomjs
+        flashLanguage.textContent = jsCards[i].language
+        flashQuestion.textContent = jsCards[i].question
+        flashAnswer.textContent = jsCards[i].answer
         flashAnswer.style.visibility = 'hidden'
-        flashReference.textContent = flashCards[i].reference 
+        flashReference.innerHTML = jsCards[i].reference 
         flashReference.style.visibility = 'hidden'
         flashCard.appendChild(flashLanguage)
         flashCard.appendChild(flashQuestion)
@@ -108,56 +108,74 @@ function jsCard(language, question, answer, reference){
 }
 
 
-//      new htmlCard('','','','')
-//      new cssCard('','','','')
-//      new jsCard('','','','')
+//      new htmlCard('HTML','','','<a href="">Reference</a>')
+//      new cssCard('CSS','','','<a href="">Reference</a>')
+//      new jsCard('JavaScript','','','<a href="">Reference</a>')
 
 
 //ADD NEW HTML CARDS HERE HTMLCARDADD
-//      new htmlCard('','','','')
+//      new htmlCard(   'HTML','','','<a href="">Reference</a>')
 new htmlCard(   'HTML', 
                 'How do you link a CSS stylesheet to html?',
                 '<link rel="stylesheet" href="style.css">',
-                'https://www.w3schools.com/tags/tag_link.asp'
+                '<a href="https://www.w3schools.com/tags/tag_link.asp">Reference</a>'
 )
 new htmlCard(   'HTML', 
                 'What is the correct HTML element for the largest heading?',
                 '<h1>',
-                'https://www.w3schools.com/tags/tag_hn.asp'
+                '<a href="https://www.w3schools.com/tags/tag_hn.asp">Reference</a>'
+                
 )
 
 new htmlCard(   'HTML', 
                 'How do you define important text?',
                 '<strong>',
-                'https://www.w3schools.com/tags/tag_strong.asp'
+                '<a href="https://www.w3schools.com/tags/tag_strong.asp">Reference</a>'
+                
 )
 new htmlCard(   'HTML',
                 'How do you link an external JavaScript file?',
                 '<script src="myscripts.js"></script>',
-                'https://www.w3schools.com/tags/att_script_src.asp')
-new htmlCard('','','','')
-new htmlCard('','','','')
-new htmlCard('','','','')
-new htmlCard('','','','')
+                '<a href="https://www.w3schools.com/tags/att_script_src.asp">Reference</a>'
+)
+new htmlCard(   'HTML',
+                'How do you execute a JavaScript function when an element is clicked?',
+                '<element onclick="myScript">',
+                '<a href="https://www.w3schools.com/jsref/event_onclick.asp">Reference</a>'
+)
+new htmlCard(   'HTML',
+                'What does HTML stand for?',
+                'Hyper Text Markup Language',
+                '<a href="https://www.w3schools.com/html/html_intro.asp">Reference</a>'
+)
+new htmlCard(   'HTML',
+                'Who is making the Web Standards?',
+                'The World Wide Web Consortium',
+                '<a href="https://www.w3.org/standards/">Reference</a>')
+new htmlCard(   'HTML',
+                'What is the <body> tag in HTML?',
+                'The <body> tag defines the documents body. It contains all the contents of an HTML document. <strong>Note:</strong> There can only be one <body> element in an HTML document',
+                '<a href="https://www.w3schools.com/tags/tag_body.asp#:~:text=The%20tag%20defines%20the,%2C%20tables%2C%20lists%2C%20etc.">Reference</a>'
+                )
 
 //ADD NEW CSS CARDS HERE CSSCARDADD
-//      new cssCard('','','','')
-new cssCard('','','','')
-new cssCard('','','','')
-new cssCard('','','','')
-new cssCard('','','','')
-new cssCard('','','','')
-new cssCard('','','','')
-new cssCard('','','','')
-new cssCard('','','','')
+//      new cssCard(    'CSS','','','<a href="">Reference</a>')
+
+new cssCard(    'CSS',
+                '','','<a href="">Reference</a>')
+new cssCard(    'CSS',
+                '','','<a href="">Reference</a>')
+new cssCard(    'CSS',
+                '','','<a href="">Reference</a>')
+
+
 
 //ADD NEW JAVASCRIPT CARDS HERE JSCARDADD
-//      new jsCard('','','','')
-new jsCard('','','','')
-new jsCard('','','','')
-new jsCard('','','','')
-new jsCard('','','','')
-new jsCard('','','','')
-new jsCard('','','','')
-new jsCard('','','','')
-new jsCard('','','','')
+//      new jsCard( 'JavaScript','','','<a href="">Reference</a>')
+
+new jsCard( 'JavaScript',
+                '','','<a href="">Reference</a>')
+new jsCard( 'JavaScript',
+                '','','<a href="">Reference</a>')
+new jsCard( 'JavaScript',
+                '','','<a href="">Reference</a>')

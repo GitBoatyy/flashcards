@@ -11,3 +11,24 @@ body{
     justify-content: space-between;
     gap: 10px;
 }
+.answerbutton{
+    max-width: 50px;
+
+}
+.flashcard{
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+    align-items: center;
+    border: solid, 4px;
+    border-color: black;
+    background-color: bisque;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    gap: 5px;
+}
+
+.language{
+    font-weight: bold;
+}
