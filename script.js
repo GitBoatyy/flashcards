@@ -30,8 +30,8 @@ function displayAnswer(){
 function someListener(event){
     var element = event.target;
     var randomhtml = Math.floor((Math.random()*htmlCards.length));
-    var randomcss = Math.floor((Math.random()*htmlCards.length));
-    var randomjs = Math.floor((Math.random()*htmlCards.length));
+    var randomcss = Math.floor((Math.random()*cssCards.length));
+    var randomjs = Math.floor((Math.random()*jsCards.length));
 
 
     if(element.id == 'html'){
@@ -162,11 +162,18 @@ new htmlCard(   'HTML',
 //      new cssCard(    'CSS','','','<a href="">Reference</a>')
 
 new cssCard(    'CSS',
-                '','','<a href="">Reference</a>')
+                'How do you call a universal selector? A class selector? An Id selector?',
+                '*{} - universal, .class, #Id',
+                '<a href="https://www.w3schools.com/cssref/css_selectors.asp">Reference</a>')
+
 new cssCard(    'CSS',
-                '','','<a href="">Reference</a>')
+                'How you make text stick to the right side of the element?',
+                'text-align: right;',
+                '<a href="https://www.w3schools.com/cssref/pr_text_text-align.ASP">Reference</a>')
 new cssCard(    'CSS',
-                '','','<a href="">Reference</a>')
+                'How do you call flexbox for an element?',
+                'display: flex;',
+                '<a href="https://www.w3schools.com/css/css3_flexbox.asp">Reference</a>')
 
 
 
