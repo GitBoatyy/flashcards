@@ -181,8 +181,14 @@ new cssCard(    'CSS',
 //      new jsCard( 'JavaScript','','','<a href="">Reference</a>')
 
 new jsCard( 'JavaScript',
-                '','','<a href="">Reference</a>')
+                'What is a getter method used for?',
+                'Getter methods are used to access the properties of an object, withour giving access to the object.',
+                '<a href="https://www.programiz.com/javascript/getter-setter">Reference</a>')
 new jsCard( 'JavaScript',
-                '','','<a href="">Reference</a>')
+                'What is a setter method used for?',
+                'Setter methods are used to change the values of an object without giving access to the object ',
+                '<a href="https://www.programiz.com/javascript/getter-setter">Reference</a>')
 new jsCard( 'JavaScript',
-                '','','<a href="">Reference</a>')
+                'What is a constructor?',
+                'The constructor method is a special method of a class for creating and initializing an object instance of that class.',
+                '<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor">Reference</a>')
